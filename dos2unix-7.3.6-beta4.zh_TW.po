@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dos2unix 6.0.5-b3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-20 22:02+0200\n"
-"PO-Revision-Date: 2019-10-13 21:10+0800\n"
+"PO-Revision-Date: 2019-10-13 22:32+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -57,7 +57,7 @@ msgstr "程式錯誤，不合法的轉換模式 %d\n"
 #: dos2unix.c:313 dos2unix.c:494 unix2dos.c:269 unix2dos.c:467
 #, c-format
 msgid "Converted %u out of %u line breaks.\n"
-msgstr ""
+msgstr "已轉換 %u 個，共 %u 個斷行。\n"
 
 #: dos2unix.c:371 unix2dos.c:327
 #, c-format
@@ -159,7 +159,7 @@ msgstr "用法: %s [選項] [file ...] [-n infile outfile ...]\n"
 
 #: common.c:648
 msgid " --allow-chown         allow file ownership change\n"
-msgstr ""
+msgstr " --allow-chown         允許變更檔案擁有者\n"
 
 #: common.c:650
 msgid " -ascii                convert only line breaks (default)\n"
@@ -221,6 +221,8 @@ msgid ""
 " -D, --display-enc     set encoding of displayed text messages\n"
 "   encoding            ansi, unicode, utf8, default to ansi\n"
 msgstr ""
+" -D, --display-enc     設定顯示文字訊息的編碼方式\n"
+"   編碼方式            ansi、unicode、utf8，預設是 ansi\n"
 
 #: common.c:669
 msgid " -f, --force           force conversion of binary files\n"
@@ -228,7 +230,7 @@ msgstr " -f, --force           強制轉換二進位檔案\n"
 
 #: common.c:672
 msgid " -gb, --gb18030        convert UTF-16 to GB18030\n"
-msgstr ""
+msgstr " -gb, --gb18030        轉換 UTF-16 至 GB18030\n"
 
 #: common.c:675
 msgid " -h, --help            display this help text\n"
@@ -274,7 +276,7 @@ msgstr ""
 
 #: common.c:686
 msgid " --no-allow-chown      don't allow file ownership change (default)\n"
-msgstr ""
+msgstr " --no-allow-chown      不允許變更檔案擁有者 (預設值)\n"
 
 #: common.c:688
 msgid ""
@@ -307,7 +309,7 @@ msgstr " -s, --safe            略過二進位檔案(預設)\n"
 
 #: common.c:697
 msgid " -u,  --keep-utf16     keep UTF-16 encoding\n"
-msgstr ""
+msgstr " -u,  --keep-utf16     維持使用 UTF-16 編碼方式\n"
 
 #: common.c:698
 msgid " -ul, --assume-utf16le assume that the input format is UTF-16LE\n"
@@ -319,7 +321,7 @@ msgstr " -ub, --assume-utf16be 假設輸入檔格式為UTF-16BE\n"
 
 #: common.c:701
 msgid " -v,  --verbose        verbose operation\n"
-msgstr ""
+msgstr " -v,  --verbose        詳細輸出動作\n"
 
 #: common.c:703
 msgid " -F, --follow-symlink  follow symbolic links and convert the targets\n"
@@ -430,11 +432,11 @@ msgstr "含本地語言支援。\n"
 
 #: common.c:773
 msgid "With support to preserve the user and group ownership of files.\n"
-msgstr ""
+msgstr "包含保留檔案使用者及群組所有權的支援。\n"
 
 #: common.c:775
 msgid "Without support to preserve the user and group ownership of files.\n"
-msgstr ""
+msgstr "不包含保留檔案使用者及群組所有權的支援。\n"
 
 #: common.c:909
 #| msgid "Failed to open temporary output file: %s\n"
@@ -445,36 +447,36 @@ msgstr "暫存輸出檔案路徑過長："
 #: common.c:1230
 #, c-format
 msgid "Writing %s BOM.\n"
-msgstr ""
+msgstr "正在寫入 %s BOM。\n"
 
 #: common.c:1190 common.c:1243 common.c:1776 common.c:1797
 msgid "UTF-16LE"
-msgstr ""
+msgstr "UTF-16LE"
 
 #: common.c:1197 common.c:1246 common.c:1778 common.c:1799
 msgid "UTF-16BE"
-msgstr ""
+msgstr "UTF-16BE"
 
 #: common.c:1204 common.c:1223 common.c:1252 common.c:1789
 msgid "GB18030"
-msgstr ""
+msgstr "GB18030"
 
 #: common.c:1211 common.c:1230 common.c:1249 common.c:1791
 msgid "UTF-8"
-msgstr ""
+msgstr "UTF-8"
 
 #: common.c:1275
 #, c-format
 msgid "Input file %s has %s BOM.\n"
-msgstr ""
+msgstr "%s 輸入檔有 %s BOM。\n"
 
 #: common.c:1316 common.c:1358
 msgid "Assuming UTF-16LE encoding.\n"
-msgstr ""
+msgstr "假設 UTF-16LE 編碼方式。\n"
 
 #: common.c:1320 common.c:1362
 msgid "Assuming UTF-16BE encoding.\n"
-msgstr ""
+msgstr "假設 UTF-16BE 編碼方式。\n"
 
 #: common.c:1507
 #, c-format
@@ -495,7 +497,7 @@ msgstr "無法變更暫存輸出檔案 %s 的權限："
 #: common.c:1587
 #, c-format
 msgid "The user and/or group ownership of file %s is not preserved.\n"
-msgstr ""
+msgstr "不會保留 %s 檔案的使用者及/或群組所有權。\n"
 
 #: common.c:1609
 #, c-format
@@ -675,7 +677,7 @@ msgstr "無法讀取 %s 輸入檔："
 #: common.c:2261
 #, c-format
 msgid "wrong flag '%c' for option -i or --info\n"
-msgstr ""
+msgstr "傳入 -i 或 --info 選項的 '%c' 旗標錯誤\n"
 
 #: common.c:2391 common.c:2434
 #, c-format
@@ -716,11 +718,11 @@ msgstr "無法寫入輸出檔：%s\n"
 
 #: common.c:2685
 msgid "error: Invalid surrogate pair. Missing low surrogate.\n"
-msgstr ""
+msgstr "錯誤：代理 (surrogate) 配對無效。缺少低代理。\n"
 
 #: common.c:2701
 msgid "error: Invalid surrogate pair. Missing high surrogate.\n"
-msgstr ""
+msgstr "錯誤：代理 (surrogate) 配對無效。缺少高代理。\n"
 
 #~ msgid "Skipping UTF-16 file %s, the current locale character encoding is not UTF-8.\n"
 #~ msgstr "略過 UTF-16 檔案 %s，目前語言字元編碼並非UTF-8。\n"
