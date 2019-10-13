@@ -47,7 +47,7 @@ msgstr ""
 #, c-format
 #| msgid "Binary symbol 0x00%02X found at line %d\n"
 msgid "Binary symbol 0x00%02X found at line %u\n"
-msgstr "在第 %2$u 找到二進位符號 0x00%1$02X"
+msgstr "在第 %2$u 找到二進位符號 0x00%1$02X\n"
 
 #: dos2unix.c:305 dos2unix.c:488 unix2dos.c:261 unix2dos.c:461
 #, c-format
@@ -68,7 +68,7 @@ msgstr "使用 %d 編碼頁。\n"
 #, c-format
 #| msgid "Binary symbol 0x%02X found at line %d\n"
 msgid "Binary symbol 0x%02X found at line %u\n"
-msgstr "在第 %2$u 找到二進位符號 0x%1$02X"
+msgstr "在第 %2$u 找到二進位符號 0x%1$02X\n"
 
 #: dos2unix.c:529 unix2dos.c:502
 msgid "error: Value of environment variable DOS2UNIX_LOCALEDIR is too long.\n"
