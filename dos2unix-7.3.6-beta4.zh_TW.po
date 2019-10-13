@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: dos2unix 6.0.5-b3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-20 22:02+0200\n"
-"PO-Revision-Date: 2019-10-13 22:32+0800\n"
+"PO-Revision-Date: 2019-10-13 22:43+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "版權所有 (C) 2009-%d Erwin Waterlander\n"
 "版權所有 (C) 1998      Christian Wurll (版本 3.1)\n"
-"版權所有 (C) 1998      Bernd Johannes Wuebben (版權 3.0)\n"
+"版權所有 (C) 1998      Bernd Johannes Wuebben (版本 3.0)\n"
 "版權所有 (C) 1994-1995 Benjamin Lin\n"
 "保留所有權利。\n"
 "\n"
@@ -57,7 +57,7 @@ msgstr "程式錯誤，不合法的轉換模式 %d\n"
 #: dos2unix.c:313 dos2unix.c:494 unix2dos.c:269 unix2dos.c:467
 #, c-format
 msgid "Converted %u out of %u line breaks.\n"
-msgstr "已轉換 %u 個，共 %u 個斷行。\n"
+msgstr "已轉換 %u 個，共 %u 個換行符號。\n"
 
 #: dos2unix.c:371 unix2dos.c:327
 #, c-format
@@ -72,7 +72,7 @@ msgstr "在第 %2$u 找到二進位符號 0x%1$02X"
 
 #: dos2unix.c:529 unix2dos.c:502
 msgid "error: Value of environment variable DOS2UNIX_LOCALEDIR is too long.\n"
-msgstr "錯誤：環境變數DOS2UNIX_LOCALEDIR 的值太長。\n"
+msgstr "錯誤：環境變數 DOS2UNIX_LOCALEDIR 的值太長。\n"
 
 #: unix2dos.c:69
 #, c-format
@@ -104,6 +104,7 @@ msgstr "無法寫入暫存輸出檔案 %s："
 msgid "Failed to close input file %s:"
 msgstr "無法關閉輸入檔案 %s："
 
+# License, wait for translating.
 #: common.c:611
 msgid ""
 "Redistribution and use in source and binary forms, with or without\n"
@@ -116,16 +117,8 @@ msgid ""
 "   the distribution.\n"
 "\n"
 msgstr ""
-"Redistribution and use in source and binary forms, with or without\n"
-"modification, are permitted provided that the following conditions\n"
-"are met:\n"
-"1. Redistributions of source code must retain the above copyright\n"
-"   notice, this list of conditions and the following disclaimer.\n"
-"2. Redistributions in binary form must reproduce the above copyright\n"
-"   notice in the documentation and/or other materials provided with\n"
-"   the distribution.\n"
-"\n"
 
+# License, wait for translating.
 #: common.c:621
 msgid ""
 "THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY\n"
@@ -140,22 +133,11 @@ msgid ""
 "OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN\n"
 "IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
 msgstr ""
-"THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY\n"
-"EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n"
-"IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n"
-"PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE\n"
-"FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n"
-"CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT\n"
-"OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\n"
-"BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\n"
-"WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\n"
-"OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN\n"
-"IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
 
 #: common.c:646
 #, c-format
 msgid "Usage: %s [options] [file ...] [-n infile outfile ...]\n"
-msgstr "用法: %s [選項] [file ...] [-n infile outfile ...]\n"
+msgstr "用法: %s [選項] [檔案 ...] [-n 輸入檔 輸出檔 ...]\n"
 
 #: common.c:648
 msgid " --allow-chown         allow file ownership change\n"
@@ -163,40 +145,40 @@ msgstr " --allow-chown         允許變更檔案擁有者\n"
 
 #: common.c:650
 msgid " -ascii                convert only line breaks (default)\n"
-msgstr " -ascii                只轉換換行字元(預設)\n"
+msgstr " -ascii                只轉換換行字元 (預設)\n"
 
 #: common.c:651
 msgid ""
 " -iso                  conversion between DOS and ISO-8859-1 character set\n"
-msgstr " -iso                  在DOS 和ISO-8859-1 字元集間轉換\n"
+msgstr " -iso                  在 DOS 和 ISO-8859-1 字元集間轉換\n"
 
 #: common.c:652
 msgid "   -1252               use Windows code page 1252 (Western European)\n"
-msgstr "   -1252               使用Windows 1252 編碼頁(西歐)\n"
+msgstr "   -1252               使用 Windows 1252 編碼頁 (西歐)\n"
 
 #: common.c:653
 msgid "   -437                use DOS code page 437 (US) (default)\n"
-msgstr "   -437                使用DOS 437 編碼頁(US) (預設)\n"
+msgstr "   -437                使用 DOS 437 編碼頁 (US)(預設)\n"
 
 #: common.c:654
 msgid "   -850                use DOS code page 850 (Western European)\n"
-msgstr "   -850                使用DOS 850 編碼頁(西歐)\n"
+msgstr "   -850                使用 DOS 850 編碼頁 (西歐)\n"
 
 #: common.c:655
 msgid "   -860                use DOS code page 860 (Portuguese)\n"
-msgstr "   -860                使用DOS 860 編碼頁(葡萄牙)\n"
+msgstr "   -860                使用 DOS 860 編碼頁 (葡萄牙)\n"
 
 #: common.c:656
 msgid "   -863                use DOS code page 863 (French Canadian)\n"
-msgstr "   -863                使用DOS 863 編碼頁(加拿大法語)\n"
+msgstr "   -863                使用 DOS 863 編碼頁 (加拿大法語)\n"
 
 #: common.c:657
 msgid "   -865                use DOS code page 865 (Nordic)\n"
-msgstr "   -865                使用DOS 865 編碼頁(北歐)\n"
+msgstr "   -865                使用 DOS 865 編碼頁 (北歐)\n"
 
 #: common.c:658
 msgid " -7                    convert 8 bit characters to 7 bit space\n"
-msgstr " -7                    轉換8 位元字元到7 位元空間\n"
+msgstr " -7                    轉換 8 位元字元到 7 位元空間\n"
 
 #: common.c:660
 #| msgid " -m, --add-bom         add UTF-8 Byte Order Mark\n"
@@ -214,7 +196,7 @@ msgid ""
 "   convmode            ascii, 7bit, iso, mac, default to ascii\n"
 msgstr ""
 " -c, --convmode        轉換模式\n"
-"   convmode            ascii, 7bit, iso, mac, 預設為ascii\n"
+"   轉換模式            ascii、7bit、iso、mac，預設是 ascii\n"
 
 #: common.c:666
 msgid ""
@@ -283,8 +265,8 @@ msgid ""
 " -o, --oldfile         write to old file (default)\n"
 "   file ...            files to convert in old-file mode\n"
 msgstr ""
-" -o, --oldfile         寫入原檔案(預設)\n"
-"   file ...            原檔模式中要轉換的檔案\n"
+" -o, --oldfile         寫入原檔案 (預設)\n"
+"   檔案 ...            原檔模式中要轉換的檔案\n"
 
 #: common.c:690
 #| msgid ""
@@ -305,7 +287,7 @@ msgstr " -r, --remove-bom      移除位元組順序記號 (BOM)\n"
 
 #: common.c:695
 msgid " -s, --safe            skip binary files (default)\n"
-msgstr " -s, --safe            略過二進位檔案(預設)\n"
+msgstr " -s, --safe            略過二進位檔案 (預設)\n"
 
 #: common.c:697
 msgid " -u,  --keep-utf16     keep UTF-16 encoding\n"
@@ -313,11 +295,11 @@ msgstr " -u,  --keep-utf16     維持使用 UTF-16 編碼方式\n"
 
 #: common.c:698
 msgid " -ul, --assume-utf16le assume that the input format is UTF-16LE\n"
-msgstr " -ul, --assume-utf16le 假設輸入檔格式為UTF-16LE\n"
+msgstr " -ul, --assume-utf16le 假設輸入檔格式為 UTF-16LE\n"
 
 #: common.c:699
 msgid " -ub, --assume-utf16be assume that the input format is UTF-16BE\n"
-msgstr " -ub, --assume-utf16be 假設輸入檔格式為UTF-16BE\n"
+msgstr " -ub, --assume-utf16be 假設輸入檔格式為 UTF-16BE\n"
 
 #: common.c:701
 msgid " -v,  --verbose        verbose operation\n"
@@ -325,7 +307,7 @@ msgstr " -v,  --verbose        詳細輸出動作\n"
 
 #: common.c:703
 msgid " -F, --follow-symlink  follow symbolic links and convert the targets\n"
-msgstr " -F, --follow-symlink  依循符號連結轉換其目標檔案\n"
+msgstr " -F, --follow-symlink  依循符號連結轉換目標檔案\n"
 
 #: common.c:706
 msgid ""
@@ -338,7 +320,7 @@ msgstr ""
 #: common.c:708
 msgid ""
 " -S, --skip-symlink    keep symbolic links and targets unchanged (default)\n"
-msgstr " -S, --skip-symlink    保持符號連結及其目標不變(預設)\n"
+msgstr " -S, --skip-symlink    保持符號連結及其目標不變 (預設)\n"
 
 #: common.c:710
 msgid " -V, --version         display version number\n"
@@ -346,19 +328,19 @@ msgstr " -V, --version         顯示版本號碼\n"
 
 #: common.c:722
 msgid "DOS 16 bit version (WATCOMC).\n"
-msgstr "DOS 16 位元版本(WATCOMC)。\n"
+msgstr "DOS 16 位元版本 (WATCOMC)。\n"
 
 #: common.c:724
 msgid "DOS 16 bit version (TURBOC).\n"
-msgstr "DOS 16 位元版本(TURBOC)。\n"
+msgstr "DOS 16 位元版本 (TURBOC)。\n"
 
 #: common.c:726
 msgid "DOS 32 bit version (WATCOMC).\n"
-msgstr "DOS 32 位元版本(WATCOMC)。\n"
+msgstr "DOS 32 位元版本 (WATCOMC)。\n"
 
 #: common.c:728
 msgid "DOS 32 bit version (DJGPP).\n"
-msgstr "DOS 32 位元版本(DJGPP)。\n"
+msgstr "DOS 32 位元版本 (DJGPP)。\n"
 
 #: common.c:730
 msgid "MSYS version.\n"
@@ -370,37 +352,37 @@ msgstr "Cygwin 版本。\n"
 
 #: common.c:734
 msgid "Windows 64 bit version (MinGW-w64).\n"
-msgstr "Windows 64 位元版本(MinGW-w64)。\n"
+msgstr "Windows 64 位元版本 (MinGW-w64)。\n"
 
 #: common.c:736
 msgid "Windows 32 bit version (WATCOMC).\n"
-msgstr "Windows 32 位元版本(WATCOMC)。\n"
+msgstr "Windows 32 位元版本 (WATCOMC)。\n"
 
 #: common.c:738
 msgid "Windows 32 bit version (MinGW-w64).\n"
-msgstr "Windows 32 位元版本(MinGW-w64)。\n"
+msgstr "Windows 32 位元版本 (MinGW-w64)。\n"
 
 #: common.c:740
 msgid "Windows 32 bit version (MinGW).\n"
-msgstr "Windows 32 位元版本(MinGW)。\n"
+msgstr "Windows 32 位元版本 (MinGW)。\n"
 
 #: common.c:742
 #, c-format
 msgid "Windows 64 bit version (MSVC %d).\n"
-msgstr "Windows 64 位元版本(MSVC %d)。\n"
+msgstr "Windows 64 位元版本 (MSVC %d)。\n"
 
 #: common.c:744
 #, c-format
 msgid "Windows 32 bit version (MSVC %d).\n"
-msgstr "Windows 32 位元版本(MSVC %d)。\n"
+msgstr "Windows 32 位元版本 (MSVC %d)。\n"
 
 #: common.c:746
 msgid "OS/2 version (WATCOMC).\n"
-msgstr "OS/2 版本(WATCOMC)。\n"
+msgstr "OS/2 版本 (WATCOMC)。\n"
 
 #: common.c:748
 msgid "OS/2 version (EMX).\n"
-msgstr "OS/2 版本(EMX)。\n"
+msgstr "OS/2 版本 (EMX)。\n"
 
 #: common.c:750
 #, c-format
@@ -410,11 +392,11 @@ msgstr "%s 版本。\n"
 
 #: common.c:756
 msgid "With Unicode UTF-16 support.\n"
-msgstr "有Unicode UTF-16 支援。\n"
+msgstr "包含 Unicode UTF-16 支援。\n"
 
 #: common.c:758
 msgid "Without Unicode UTF-16 support.\n"
-msgstr "無Unicode UTF-16 支援。\n"
+msgstr "不包含 Unicode UTF-16 支援。\n"
 
 #: common.c:762
 #| msgid "With Unicode UTF-16 support.\n"
@@ -428,7 +410,7 @@ msgstr "不包含 Unicode 檔名支援。\n"
 
 #: common.c:768
 msgid "With native language support.\n"
-msgstr "含本地語言支援。\n"
+msgstr "包含原生語言支援。\n"
 
 #: common.c:773
 msgid "With support to preserve the user and group ownership of files.\n"
@@ -481,7 +463,7 @@ msgstr "假設 UTF-16BE 編碼方式。\n"
 #: common.c:1507
 #, c-format
 msgid "Failed to open temporary output file: %s\n"
-msgstr "暫存檔 %s 開啟失敗\n"
+msgstr "無法開啟暫存輸出檔案：%s\n"
 
 #: common.c:1519
 #, c-format
@@ -508,12 +490,12 @@ msgstr "無法變更暫存輸出檔案 %s 的擁有者及群組："
 #: common.c:1657
 #, c-format
 msgid "problems resolving symbolic link '%s'\n"
-msgstr "解析符號連結'%s' 發生問題\n"
+msgstr "解析符號連結 '%s' 發生問題\n"
 
 #: common.c:1658 common.c:1690
 #, c-format
 msgid "          output file remains in '%s'\n"
-msgstr "          輸出檔案'%s' 未改變\n"
+msgstr "          輸出檔案 '%s' 未改變\n"
 
 #: common.c:1684
 #, c-format
@@ -524,17 +506,17 @@ msgstr "重命名 '%s' 至 '%s' 時發生問題："
 #: common.c:1688
 #, c-format
 msgid "          which is the target of symbolic link '%s'\n"
-msgstr "          後者為符號連結'%s' 的目標\n"
+msgstr "          後者為符號連結 '%s' 的目標\n"
 
 #: common.c:1751 common.c:1846
 #, c-format
 msgid "Skipping binary file %s\n"
-msgstr "略過二進位檔案%s\n"
+msgstr "略過二進位檔案 %s\n"
 
 #: common.c:1754 common.c:1849
 #, c-format
 msgid "code page %d is not supported.\n"
-msgstr "未支援%d 編碼頁。\n"
+msgstr "未支援 %d 編碼頁。\n"
 
 #: common.c:1758 common.c:1853 common.c:1941
 #, c-format
@@ -564,7 +546,7 @@ msgstr "略過 %s，不是一個普通檔案。\n"
 #: common.c:1835
 #, c-format
 msgid "Skipping %s, output file %s is a symbolic link.\n"
-msgstr "略過 %s，輸出檔 %s 是一個符號連結。.\n"
+msgstr "略過 %s，輸出檔 %s 是一個符號連結。\n"
 
 #: common.c:1837
 #, c-format
@@ -584,32 +566,32 @@ msgstr "略過 %s，符號連結 %s 目標不是一個普通檔案。\n"
 #: common.c:1868
 #, c-format
 msgid "converting file %s to file %s in Unix format...\n"
-msgstr "正在轉換 %s 為Unix 格式到 %s...\n"
+msgstr "正在轉換 %s 至 Unix 格式的 %s...\n"
 
 #: common.c:1870
 #, c-format
 msgid "converting file %s to Unix format...\n"
-msgstr "正在轉換 %s 為Unix 格式...\n"
+msgstr "正在轉換 %s 至 Unix 格式...\n"
 
 #: common.c:1874
 #, c-format
 msgid "converting file %s to file %s in Mac format...\n"
-msgstr "正在轉換 %s 為Mac 格式到 %s...\n"
+msgstr "正在轉換 %s 至 Mac 格式的 %s...\n"
 
 #: common.c:1876
 #, c-format
 msgid "converting file %s to Mac format...\n"
-msgstr "正在轉換 %s 為Mac 格式...\n"
+msgstr "正在轉換 %s 至 Mac 格式...\n"
 
 #: common.c:1879
 #, c-format
 msgid "converting file %s to file %s in DOS format...\n"
-msgstr "正在轉換 %s 為DOS 格式到 %s...\n"
+msgstr "正在轉換 %s 至 DOS 格式的 %s...\n"
 
 #: common.c:1881
 #, c-format
 msgid "converting file %s to DOS format...\n"
-msgstr "正在轉換 %s 為DOS 格式...\n"
+msgstr "正在轉換 %s 至 DOS 格式...\n"
 
 #. TRANSLATORS:
 #. 1st %s is encoding of input file.
@@ -692,7 +674,7 @@ msgstr "指定的轉換模式 %s 不合法\n"
 #: common.c:2454 common.c:2484
 #, c-format
 msgid "option '%s' requires an argument\n"
-msgstr "選項'%s' 需要一個引數\n"
+msgstr "選項 '%s' 需要一個參數\n"
 
 #: common.c:2476
 #, c-format
