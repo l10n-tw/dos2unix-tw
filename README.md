@@ -1,6 +1,6 @@
 # dos2unix-tw
 ## status
-**等待由 Pei Jen Wang 分配翻譯員上傳。**
+**等待由 Pei Jen Wang 分配翻譯員上傳。**<br>
 **Waiting for being uploaded by Pei Jen Wang (Assigned Translator).**
  
 - the last time I uploaded to upstream: `null`
