@@ -2,24 +2,25 @@
 # This file is distributed under the same license as the dos2unix package.
 #
 # mail6543210 <mail6543210@yahoo.com.tw>, 2014.
+# pan93412 <pan93412@gmail.com>, 2019.
 msgid ""
 msgstr ""
 "Project-Id-Version: dos2unix 6.0.5-b3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-09-20 22:02+0200\n"
-"PO-Revision-Date: 2014-03-14 00:43+0800\n"
-"Last-Translator: mail6543210 <mail6543210@yahoo.com.tw>\n"
-"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"PO-Revision-Date: 2019-10-13 21:10+0800\n"
+"Last-Translator: pan93412 <pan93412@gmail.com>\n"
+"Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Lokalize 19.08.2\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: dos2unix.c:79
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Copyright (C) 2009-2014 Erwin Waterlander\n"
 #| "Copyright (C) 1998      Christian Wurll (Version 3.1)\n"
@@ -35,18 +36,18 @@ msgid ""
 "All rights reserved.\n"
 "\n"
 msgstr ""
-"Copyright (C) 2009-2014 Erwin Waterlander\n"
-"Copyright (C) 1998      Christian Wurll (版本 3.1)\n"
-"Copyright (C) 1998      Bernd Johannes Wuebben (版本 3.0)\n"
-"Copyright (C) 1994-1995 Benjamin Lin\n"
+"版權所有 (C) 2009-%d Erwin Waterlander\n"
+"版權所有 (C) 1998      Christian Wurll (版本 3.1)\n"
+"版權所有 (C) 1998      Bernd Johannes Wuebben (版權 3.0)\n"
+"版權所有 (C) 1994-1995 Benjamin Lin\n"
 "保留所有權利。\n"
 "\n"
 
 #: dos2unix.c:212 dos2unix.c:249 unix2dos.c:149 unix2dos.c:209
-#, fuzzy, c-format
+#, c-format
 #| msgid "Binary symbol 0x00%02X found at line %d\n"
 msgid "Binary symbol 0x00%02X found at line %u\n"
-msgstr "找到二進位符號0x00%02X 在第%d 行\n"
+msgstr "在第 %2$u 找到二進位符號 0x00%1$02X"
 
 #: dos2unix.c:305 dos2unix.c:488 unix2dos.c:261 unix2dos.c:461
 #, c-format
@@ -64,17 +65,17 @@ msgid "using code page %d.\n"
 msgstr "使用 %d 編碼頁。\n"
 
 #: dos2unix.c:395 dos2unix.c:432 unix2dos.c:349 unix2dos.c:409
-#, fuzzy, c-format
+#, c-format
 #| msgid "Binary symbol 0x%02X found at line %d\n"
 msgid "Binary symbol 0x%02X found at line %u\n"
-msgstr "找到二進位符號0x%02X 在第%d 行\n"
+msgstr "在第 %2$u 找到二進位符號 0x%1$02X"
 
 #: dos2unix.c:529 unix2dos.c:502
 msgid "error: Value of environment variable DOS2UNIX_LOCALEDIR is too long.\n"
 msgstr "錯誤：環境變數DOS2UNIX_LOCALEDIR 的值太長。\n"
 
 #: unix2dos.c:69
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Copyright (C) 2009-2014 Erwin Waterlander\n"
 #| "Copyright (C) 1994-1995 Benjamin Lin\n"
@@ -86,22 +87,22 @@ msgid ""
 "All rights reserved.\n"
 "\n"
 msgstr ""
-"Copyright © 2009-2014 Erwin Waterlander\n"
-"Copyright © 1994-1995 Benjamin Lin\n"
+"版權所有 (C) 2009-%d Erwin Waterlander\n"
+"版權所有 (C) 1994-1995 Benjamin Lin\n"
 "保留所有權利。\n"
 "\n"
 
 #: common.c:81
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to write to temporary output file %s: %s\n"
 msgid "Failed to write to temporary output file %s:"
-msgstr "暫存檔寫入失敗%s：%s\n"
+msgstr "無法寫入暫存輸出檔案 %s："
 
 #: common.c:83
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to open temporary output file: %s\n"
 msgid "Failed to close input file %s:"
-msgstr "暫存檔 %s 開啟失敗\n"
+msgstr "無法關閉輸入檔案 %s："
 
 #: common.c:611
 msgid ""
@@ -165,7 +166,8 @@ msgid " -ascii                convert only line breaks (default)\n"
 msgstr " -ascii                只轉換換行字元(預設)\n"
 
 #: common.c:651
-msgid " -iso                  conversion between DOS and ISO-8859-1 character set\n"
+msgid ""
+" -iso                  conversion between DOS and ISO-8859-1 character set\n"
 msgstr " -iso                  在DOS 和ISO-8859-1 字元集間轉換\n"
 
 #: common.c:652
@@ -197,16 +199,14 @@ msgid " -7                    convert 8 bit characters to 7 bit space\n"
 msgstr " -7                    轉換8 位元字元到7 位元空間\n"
 
 #: common.c:660
-#, fuzzy
 #| msgid " -m, --add-bom         add UTF-8 Byte Order Mark\n"
 msgid " -b, --keep-bom        keep Byte Order Mark\n"
-msgstr " -m, --add-bom         加入UTF-8 BOM\n"
+msgstr " -b, --keep-bom        保留位元組順序記號 (BOM)\n"
 
 #: common.c:662
-#, fuzzy
 #| msgid " -m, --add-bom         add UTF-8 Byte Order Mark\n"
 msgid " -b, --keep-bom        keep Byte Order Mark (default)\n"
-msgstr " -m, --add-bom         加入UTF-8 BOM\n"
+msgstr " -b, --keep-bom        保留位元組順序記號 (BOM) (預設值)\n"
 
 #: common.c:663
 msgid ""
@@ -235,7 +235,6 @@ msgid " -h, --help            display this help text\n"
 msgstr " -h, --help            顯示本說明文字\n"
 
 #: common.c:676
-#, fuzzy
 #| msgid ""
 #| " -o, --oldfile         write to old file (default)\n"
 #| "   file ...            files to convert in old-file mode\n"
@@ -243,8 +242,8 @@ msgid ""
 " -i, --info[=FLAGS]    display file information\n"
 "   file ...            files to analyze\n"
 msgstr ""
-" -o, --oldfile         寫入原檔案(預設)\n"
-"   file ...            原檔模式中要轉換的檔案\n"
+" -i, --info[=FLAGS]    顯示檔案資訊\n"
+"   檔案 ...            要分析的檔案\n"
 
 #: common.c:678
 msgid " -k, --keepdate        keep output file date\n"
@@ -259,10 +258,9 @@ msgid " -l, --newline         add additional newline\n"
 msgstr " -l, --newline         加入額外的換行\n"
 
 #: common.c:681
-#, fuzzy
 #| msgid " -m, --add-bom         add UTF-8 Byte Order Mark\n"
 msgid " -m, --add-bom         add Byte Order Mark (default UTF-8)\n"
-msgstr " -m, --add-bom         加入UTF-8 BOM\n"
+msgstr " -m, --add-bom         加入位元組順序記號 (BOM) (預設是 UTF-8)\n"
 
 #: common.c:682
 msgid ""
@@ -287,26 +285,21 @@ msgstr ""
 "   file ...            原檔模式中要轉換的檔案\n"
 
 #: common.c:690
-#, fuzzy
 #| msgid ""
 #| " -q, --quiet           quiet mode, suppress all warnings\n"
 #| "                         (always on in stdio mode)\n"
 msgid " -q, --quiet           quiet mode, suppress all warnings\n"
-msgstr ""
-" -q, --quiet           安靜模式，抑制所有警告\n"
-"                         (標準輸出入模式下永遠啟用)\n"
+msgstr " -q, --quiet           安靜模式，隱藏所有警告\n"
 
 #: common.c:692
-#, fuzzy
 #| msgid " -m, --add-bom         add UTF-8 Byte Order Mark\n"
 msgid " -r, --remove-bom      remove Byte Order Mark (default)\n"
-msgstr " -m, --add-bom         加入UTF-8 BOM\n"
+msgstr " -r, --remove-bom      移除位元組順序記號 (BOM) (預設值)\n"
 
 #: common.c:694
-#, fuzzy
 #| msgid " -m, --add-bom         add UTF-8 Byte Order Mark\n"
 msgid " -r, --remove-bom      remove Byte Order Mark\n"
-msgstr " -m, --add-bom         加入UTF-8 BOM\n"
+msgstr " -r, --remove-bom      移除位元組順序記號 (BOM)\n"
 
 #: common.c:695
 msgid " -s, --safe            skip binary files (default)\n"
@@ -341,7 +334,8 @@ msgstr ""
 "                         (原連結目標檔案保持不變)\n"
 
 #: common.c:708
-msgid " -S, --skip-symlink    keep symbolic links and targets unchanged (default)\n"
+msgid ""
+" -S, --skip-symlink    keep symbolic links and targets unchanged (default)\n"
 msgstr " -S, --skip-symlink    保持符號連結及其目標不變(預設)\n"
 
 #: common.c:710
@@ -407,10 +401,10 @@ msgid "OS/2 version (EMX).\n"
 msgstr "OS/2 版本(EMX)。\n"
 
 #: common.c:750
-#, fuzzy, c-format
+#, c-format
 #| msgid "MSYS version.\n"
 msgid "%s version.\n"
-msgstr "MSYS 版本。\n"
+msgstr "%s 版本。\n"
 
 #: common.c:756
 msgid "With Unicode UTF-16 support.\n"
@@ -421,16 +415,14 @@ msgid "Without Unicode UTF-16 support.\n"
 msgstr "無Unicode UTF-16 支援。\n"
 
 #: common.c:762
-#, fuzzy
 #| msgid "With Unicode UTF-16 support.\n"
 msgid "With Unicode file name support.\n"
-msgstr "有Unicode UTF-16 支援。\n"
+msgstr "包含 Unicode 檔名支援。\n"
 
 #: common.c:764
-#, fuzzy
 #| msgid "Without Unicode UTF-16 support.\n"
 msgid "Without Unicode file name support.\n"
-msgstr "無Unicode UTF-16 支援。\n"
+msgstr "不包含 Unicode 檔名支援。\n"
 
 #: common.c:768
 msgid "With native language support.\n"
@@ -445,10 +437,9 @@ msgid "Without support to preserve the user and group ownership of files.\n"
 msgstr ""
 
 #: common.c:909
-#, fuzzy
 #| msgid "Failed to open temporary output file: %s\n"
 msgid "Path for temporary output file is too long:"
-msgstr "暫存檔 %s 開啟失敗\n"
+msgstr "暫存輸出檔案路徑過長："
 
 #: common.c:1190 common.c:1197 common.c:1204 common.c:1211 common.c:1223
 #: common.c:1230
@@ -496,10 +487,10 @@ msgid "using %s as temporary file\n"
 msgstr "使用 %s 作為暫存檔\n"
 
 #: common.c:1571 common.c:1599
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to change the permissions of temporary output file %s: %s\n"
 msgid "Failed to change the permissions of temporary output file %s:"
-msgstr "輸出暫存檔 %s 權限變更失敗：%s\n"
+msgstr "無法變更暫存輸出檔案 %s 的權限："
 
 #: common.c:1587
 #, c-format
@@ -507,10 +498,10 @@ msgid "The user and/or group ownership of file %s is not preserved.\n"
 msgstr ""
 
 #: common.c:1609
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to change the owner and group of temporary output file %s: %s\n"
 msgid "Failed to change the owner and group of temporary output file %s:"
-msgstr "輸出暫存檔 %s 擁有者及群組變更失敗：%s\n"
+msgstr "無法變更暫存輸出檔案 %s 的擁有者及群組："
 
 #: common.c:1657
 #, c-format
@@ -523,10 +514,10 @@ msgid "          output file remains in '%s'\n"
 msgstr "          輸出檔案'%s' 未改變\n"
 
 #: common.c:1684
-#, fuzzy, c-format
+#, c-format
 #| msgid "problems renaming '%s' to '%s': %s\n"
 msgid "problems renaming '%s' to '%s':"
-msgstr "重新命名「%s」到「%s」錯誤：%s\n"
+msgstr "重命名 '%s' 至 '%s' 時發生問題："
 
 #: common.c:1688
 #, c-format
@@ -549,16 +540,19 @@ msgid "Skipping UTF-16 file %s, the size of wchar_t is %d bytes.\n"
 msgstr "略過 UTF-16 檔案 %s，wchar_t 的大小是 %d 位元組。\n"
 
 #: common.c:1761 common.c:1856
-#, fuzzy, c-format
+#, c-format
 #| msgid "Skipping UTF-16 file %s, an UTF-16 conversion error occurred.\n"
-msgid "Skipping UTF-16 file %s, an UTF-16 conversion error occurred on line %u.\n"
-msgstr "略過 UTF-16 檔案 %s，UTF-16 轉換發生錯誤。\n"
+msgid ""
+"Skipping UTF-16 file %s, an UTF-16 conversion error occurred on line %u.\n"
+msgstr "跳過 %s UTF-16 檔案，第 %u 行發生 UTF-16 轉換錯誤。\n"
 
 #: common.c:1765 common.c:1860
-#, fuzzy, c-format
+#, c-format
 #| msgid "Skipping UTF-16 file %s, an UTF-16 conversion error occurred.\n"
-msgid "Skipping UTF-16 file %s, UTF-16 conversion is not supported in this version of %s.\n"
-msgstr "略過 UTF-16 檔案 %s，UTF-16 轉換發生錯誤。\n"
+msgid ""
+"Skipping UTF-16 file %s, UTF-16 conversion is not supported in this version"
+" of %s.\n"
+msgstr "跳過 %s UTF-16 檔案，這個版本的 %s 不支援 UTF-16 轉換。\n"
 
 #: common.c:1831 common.c:1930
 #, c-format
@@ -622,10 +616,10 @@ msgstr "正在轉換 %s 為DOS 格式...\n"
 #. 4th %s is name of output file.
 #. E.g.: converting UTF-16LE file in.txt to UTF-8 file out.txt in Unix format...
 #: common.c:1893
-#, fuzzy, c-format
+#, c-format
 #| msgid "converting file %s to file %s in Unix format...\n"
 msgid "converting %s file %s to %s file %s in Unix format...\n"
-msgstr "正在轉換 %s 為Unix 格式到 %s...\n"
+msgstr "正在轉換 %s 檔案 %s 至 Unix 格式的 %s 檔案 %s...\n"
 
 #. TRANSLATORS:
 #. 1st %s is encoding of input file.
@@ -633,34 +627,34 @@ msgstr "正在轉換 %s 為Unix 格式到 %s...\n"
 #. 3rd %s is encoding of output (input file is overwritten).
 #. E.g.: converting UTF-16LE file foo.txt to UTF-8 Unix format...
 #: common.c:1900
-#, fuzzy, c-format
+#, c-format
 #| msgid "converting file %s to Unix format...\n"
 msgid "converting %s file %s to %s Unix format...\n"
-msgstr "正在轉換 %s 為Unix 格式...\n"
+msgstr "正在轉換 %s 檔案 %s 至 %s Unix 格式...\n"
 
 #: common.c:1904
-#, fuzzy, c-format
+#, c-format
 #| msgid "converting file %s to file %s in Mac format...\n"
 msgid "converting %s file %s to %s file %s in Mac format...\n"
-msgstr "正在轉換 %s 為Mac 格式到 %s...\n"
+msgstr "正在轉換 %s 檔案 %s 至 Mac 格式的 %s 檔案 %s...\n"
 
 #: common.c:1906
-#, fuzzy, c-format
+#, c-format
 #| msgid "converting file %s to Mac format...\n"
 msgid "converting %s file %s to %s Mac format...\n"
-msgstr "正在轉換 %s 為Mac 格式...\n"
+msgstr "正在轉換 %s 檔案 %s 至 %s Mac 格式...\n"
 
 #: common.c:1909
-#, fuzzy, c-format
+#, c-format
 #| msgid "converting file %s to file %s in DOS format...\n"
 msgid "converting %s file %s to %s file %s in DOS format...\n"
-msgstr "正在轉換 %s 為DOS 格式到 %s...\n"
+msgstr "正在轉換 %s 檔案 %s 至 DOS 格式的 %s 檔案 %s...\n"
 
 #: common.c:1911
-#, fuzzy, c-format
+#, c-format
 #| msgid "converting file %s to DOS format...\n"
 msgid "converting %s file %s to %s DOS format...\n"
-msgstr "正在轉換 %s 為DOS 格式...\n"
+msgstr "正在轉換 %s 檔案 %s 至 %s DOS 格式...\n"
 
 #: common.c:1918
 #, c-format
@@ -673,10 +667,10 @@ msgid "problems converting file %s\n"
 msgstr "轉換檔案 %s 錯誤\n"
 
 #: common.c:2055 common.c:2105
-#, fuzzy, c-format
+#, c-format
 #| msgid "can not write to output file: %s\n"
 msgid "can not read from input file %s:"
-msgstr "無法寫入輸出檔：%s\n"
+msgstr "無法讀取 %s 輸入檔："
 
 #: common.c:2261
 #, c-format
@@ -699,10 +693,10 @@ msgid "option '%s' requires an argument\n"
 msgstr "選項'%s' 需要一個引數\n"
 
 #: common.c:2476
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid %s conversion mode specified\n"
 msgid "invalid %s display encoding specified\n"
-msgstr "指定的轉換模式 %s 不合法\n"
+msgstr "指定了無效的 %s 顯示編碼方式\n"
 
 #: common.c:2496 common.c:2509 common.c:2576
 #, c-format
@@ -710,10 +704,10 @@ msgid "target of file %s not specified in new-file mode\n"
 msgstr "新檔模式中未指明檔案 %s 的目的位置\n"
 
 #: common.c:2588
-#, fuzzy, c-format
+#, c-format
 #| msgid "can not write to output file: %s\n"
 msgid "can not read from input file: %s\n"
-msgstr "無法寫入輸出檔：%s\n"
+msgstr "無法讀取下述輸入檔案：%s\n"
 
 #: common.c:2598 common.c:2610
 #, c-format
